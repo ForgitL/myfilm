@@ -10,7 +10,7 @@ public class User {
     private String UName;
     private String UPassword;
     private String URealName;
-    private String Usex;
+    private String USex;
     private String UPhone;
     private String UEmail;
     private String Uqq;
@@ -52,11 +52,11 @@ public class User {
     }
 
     public String getUsex() {
-        return Usex;
+        return USex;
     }
 
-    public void setUsex(String usex) {
-        Usex = usex;
+    public void setUSex(String usex) {
+        USex = usex;
     }
 
     public String getUPhone() {
@@ -122,7 +122,7 @@ public class User {
                 ", UName='" + UName + '\'' +
                 ", UPassword='" + UPassword + '\'' +
                 ", URealName='" + URealName + '\'' +
-                ", Usex='" + Usex + '\'' +
+                ", USex='" + USex + '\'' +
                 ", UPhone='" + UPhone + '\'' +
                 ", UEmail='" + UEmail + '\'' +
                 ", Uqq='" + Uqq + '\'' +

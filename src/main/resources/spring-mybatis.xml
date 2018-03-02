@@ -13,7 +13,7 @@ http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
     <context:property-placeholder location="classpath:jdbc.properties" />
 
     <!-- 2.自动扫描service包(自动注入) -->
-    <context:component-scan base-package="service" />
+    <context:component-scan base-package="serviceImpl" />
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="${jdbc.driver}"></property>

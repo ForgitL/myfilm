@@ -20,4 +20,6 @@ public interface UserService {
     public int getPageCount(int pageSize);
 
     public List showUser(int pageSize, int pageNow);
+
+    public List showUser();
 }

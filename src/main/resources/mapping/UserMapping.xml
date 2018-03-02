@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="dao.UserMapper" >
+    <resultMap id="BaseResultMap" type="pojo.User" >
+        <id column="UId" property="UId" jdbcType="INTEGER" />
+        <result column="UName" property="UName" jdbcType="VARCHAR" />
+        <result column="UPassword" property="UPassword" jdbcType="VARCHAR" />
+        <result column="URealName" property="URealName" jdbcType="VARCHAR" />
+        <result column="USex" property="USex" jdbcType="VARCHAR" />
+        <result column="UPhone" property="UPhone" jdbcType="VARCHAR" />
+        <result column="UEmail" property="UEmail" jdbcType="VARCHAR" />
+        <result column="Uqq" property="Uqq" jdbcType="VARCHAR" />
+        <result column="UBirth" property="UBirth" jdbcType="VARCHAR" />
+        <result column="URole" property="URole" jdbcType="VARCHAR" />
+        <result column="UIDCard" property="UIDCard" jdbcType="VARCHAR" />
+        <result column="UPhoto" property="UPhoto" jdbcType="VARCHAR" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+        UId, UName, UPassword, URealName, USex, UPhone, UEmail, Uqq, UBirth, URole, UIDCard, UPhoto
+    </sql>
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM user
+    </select>
+</mapper>
